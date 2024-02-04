@@ -1,4 +1,4 @@
-<!-- Create an interactive navigation menu that changes color or style when scrolled or when hovering over a menu item. The navigation menu should have a fixed position and be visible on all pages. Use HTML to structure the menu, CSS to style it, and JavaScript to add interactivity, such as changing the background color or font color of the menu when it is scrolled or when a menu item is hovered over. -->
+<!--  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,6 +38,84 @@
       margin-top: 80px; /* Adjust based on your navbar height */
       padding: 20px;
     }
+
+
+
+    
+#pic1{
+
+height: 600px;
+/* background-image: url("pic1.jpg"); */
+background-image: url("pic2.jpg") ;
+background-size: cover;
+
+background-repeat: no-repeat;
+
+border: #dbf705 solid 5px;
+
+
+
+}
+
+#showcase1{ 
+
+height: 300px;
+border: #150366 solid 5px;
+
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+
+
+
+}
+
+#showcase11{
+height: 200px;
+width: 200px;
+background-color: darkgreen;
+
+border-radius: 50%;
+
+background-image: url("pic3.jpg");
+background-size: contain;
+
+}
+#showcase12{
+height: 200px;
+width: 200px;
+background-color: #0f1111;
+border-radius: 50%;
+background-image: url("pic3.jpg");
+background-size: contain;
+
+
+
+
+}
+
+#showcase13{
+
+height: 200px;
+width: 200px;
+background-color: #dbf705;
+border-radius: 50%;
+background-image: url("pic3.jpg");
+background-size: contain;
+
+
+}
+
+#showcase14{
+
+height: 200px;
+width: 200px;
+background-color: aqua;
+border-radius: 50%;
+background-image: url("pic3.jpg");
+background-size: contain;
+}
   </style>
 </head>
 <body>
@@ -49,11 +127,11 @@
   <a href="#contact">Contact</a>
 </div>
 
-<div id="section">
-  <!-- Content of your pages goes here -->
+<!-- <div id="section">
+  Content of your pages goes here
   <h2>Page Content</h2>
   <p>This is an example page.</p>
-</div>
+</div> -->
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -68,6 +146,19 @@
     });
   });
 </script>
+
+<div id="pic1">
+        
+</div>
+
+<div id="showcase1">
+    <div id="showcase11">1</div>
+    <div id="showcase12">2</div>
+    <div id="showcase13">3</div>
+    <div id="showcase14">4</div>
+</div>
+
+
 
 </body>
 </html>
