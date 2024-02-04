@@ -1,0 +1,73 @@
+<!-- Create an interactive navigation menu that changes color or style when scrolled or when hovering over a menu item. The navigation menu should have a fixed position and be visible on all pages. Use HTML to structure the menu, CSS to style it, and JavaScript to add interactivity, such as changing the background color or font color of the menu when it is scrolled or when a menu item is hovered over. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    #navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px 0;
+      text-align: center;
+      transition: background-color 0.3s;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    #navbar a {
+      text-decoration: none;
+      color: white;
+      padding: 15px;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    #navbar a:hover {
+      color: #f00;
+    }
+
+    #section {
+      margin-top: 80px; /* Adjust based on your navbar height */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="navbar">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div id="section">
+  <!-- Content of your pages goes here -->
+  <h2>Page Content</h2>
+  <p>This is an example page.</p>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 50) {
+        navbar.style.backgroundColor = "#555"; // Change background color on scroll
+      } else {
+        navbar.style.backgroundColor = "#333";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
